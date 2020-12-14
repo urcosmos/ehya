@@ -1,19 +1,23 @@
 .hero
-  position: relative
+  // position: relative
+  margin-bottom: 120px
   &__bg
     position: relative
     max-width: 1280px
-    height: 700px
-    margin: 0 auto 120px
+    max-height: 700px
+    margin: 0 auto
     border-radius: 8px
     background-color: $hero-bgc
     overflow: hidden
     &-wrapper
       position: absolute
-      left: 27.97%
-      right: -11.88%
-      top: -53.86%
-      bottom: -76.71%
+      z-index: -1
+      transform: translate(40%, -21%)
+      // left: 27.97%
+      // right: -11.88%
+      // top: -53.86%
+      // bottom: -76.71%
+      overflow: hidden
       &::after
         content: ''
         position: absolute
@@ -22,20 +26,24 @@
         width: 100%
         height: 100%
         background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
+    &-pic
+      transform: scale(1.07)
   &-container
     max-width: 1066px
     margin: 0 auto
   &-wrapper
-    position: absolute
-    top: 62px
+    // position: absolute
+    // top: 62px
+    // z-index: 10
     display: flex
     flex-direction: column
     align-items: flex-start
+
   &__tag
-    margin-bottom: 28px
+    margin-bottom: 22px
   &__title
     width: 425px
-    margin-bottom: 28px
+    margin-bottom: 35px
     font-family: 'HK Grotesk', Arial, sans-serif
     font-style: normal
     font-weight: 700
@@ -43,9 +51,9 @@
     line-height: 68px
     color: $dark-blue
   &__text
-    margin-bottom: 53px
+    margin-bottom: 51px
   &__button
-    margin-bottom: 48px
+    margin-bottom: 49px
     padding: 15px 40px
 
 .text
@@ -61,17 +69,18 @@
   &__item
     display: flex
     align-items: center
-    margin-right: 31px
+    margin-right: 34px
     &:last-child
       margin-right: 0
   &__icon
     width: 36px
     height: 36px
   &__text
+    margin-bottom: 5px
     margin-left: 8px
     font-family: 'HK Grotesk', Arial, sans-serif
     font-style: normal
-    font-weight: 400
+    font-weight: 500
     font-size: 16px
     line-height: 20px
     color: $dark-blue
