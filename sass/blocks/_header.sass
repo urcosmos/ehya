@@ -1,8 +1,12 @@
 .header
-  display: flex
-  justify-content: space-between
-  align-items: center
-  height: 100px
+  margin-bottom: 36px
+  &-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 1140px
+    height: 100px
+    margin: 0 auto
   &__logo
     &-pic
       width: 90px
@@ -12,5 +16,20 @@
   &__button
 
 .navbar
+  display: flex
+  align-items: center
   &__list
     display: flex
+    margin-right: 50px
+  &__item
+    margin-right: 41px
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    &:last-child
+      margin-right: 0
+  &__mobile
+    &-menu
+      &-button
+        &--visible
+          display: none
