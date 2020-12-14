@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'HK Grotesk';
-  src: url("../fonts/hkgrotesk-bold-web.woff2") format("woff2"), url("../fonts/hkgrotesk-bold-web.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'HK Grotesk';
-  src: url("../fonts/hkgrotesk-medium-web.woff2") format("woff2"), url("../fonts/hkgrotesk-medium-web.woff") format("woff");
+  src: url("../fonts/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,8 +16,8 @@
 
 @font-face {
   font-family: 'HK Grotesk';
-  src: url("../fonts/hkgrotesk-regular-web.woff2") format("woff2"), url("../fonts/hkgrotesk-regular-web.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2"), url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -420,8 +420,13 @@ img {
           filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1));
 }
 
-.button--solid-hero {
+.button--solid {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
   border: none;
+  background-color: #183B56;
 }
 
 .mobile-menu-button {
@@ -456,7 +461,15 @@ img {
 }
 
 .tag {
+  padding: 6px 16px;
+  color: #36B37E;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
   text-transform: uppercase;
+  background-color: rgba(54, 179, 126, 0.1);
+  -webkit-border-radius: 16px;
+          border-radius: 16px;
 }
 
 .card-trend {
@@ -548,12 +561,50 @@ img {
   display: none;
 }
 
-.hero__container {
-  width: 1060px;
+.hero {
+  position: relative;
+}
+
+.hero__bg {
+  position: relative;
+  max-width: 1280px;
+  height: 700px;
+  margin: 0 auto 120px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #E8EAE9;
+  overflow: hidden;
+}
+
+.hero__bg-wrapper {
+  position: absolute;
+  left: 27.97%;
+  right: -11.88%;
+  top: -53.86%;
+  bottom: -76.71%;
+}
+
+.hero__bg-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9));
+  background: -webkit-linear-gradient(right, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
+  background: -o-linear-gradient(right, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
+  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%);
+}
+
+.hero-container {
+  max-width: 1066px;
   margin: 0 auto;
 }
 
 .hero-wrapper {
+  position: absolute;
+  top: 62px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -569,11 +620,68 @@ img {
           align-items: flex-start;
 }
 
+.hero__tag {
+  margin-bottom: 28px;
+}
+
+.hero__title {
+  width: 425px;
+  margin-bottom: 28px;
+  font-family: 'HK Grotesk', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #183B56;
+}
+
+.hero__text {
+  margin-bottom: 53px;
+}
+
+.hero__button {
+  margin-bottom: 48px;
+  padding: 15px 40px;
+}
+
+.text {
+  width: 650px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
 .goods__list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.goods__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goods__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.goods__text {
+  font-family: 'HK Grotesk', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #183B56;
 }
 
 .collection-wrapper {

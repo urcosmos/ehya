@@ -1,14 +1,73 @@
 .hero
-  // &__bg
-  // &-pic
-  &__container
-    width: 1060px
+  position: relative
+  &__bg
+    position: relative
+    max-width: 1280px
+    height: 700px
+    margin: 0 auto 120px
+    border-radius: 8px
+    background-color: $hero-bgc
+    overflow: hidden
+    &-wrapper
+      position: absolute
+      left: 27.97%
+      right: -11.88%
+      top: -53.86%
+      bottom: -76.71%
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
+  &-container
+    max-width: 1066px
     margin: 0 auto
   &-wrapper
+    position: absolute
+    top: 62px
     display: flex
     flex-direction: column
     align-items: flex-start
+  &__tag
+    margin-bottom: 28px
+  &__title
+    width: 425px
+    margin-bottom: 28px
+    font-family: 'HK Grotesk', Arial, sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 56px
+    line-height: 68px
+    color: $dark-blue
+  &__text
+    margin-bottom: 53px
+  &__button
+    margin-bottom: 48px
+    padding: 15px 40px
+
+.text
+  width: 650px
+  font-weight: 400
+  font-size: 20px
+  line-height: 36px
+  color: $grey
 
 .goods
   &__list
     display: flex
+  &__item
+    display: flex
+    align-items: center
+  &__icon
+    width: 36px
+    height: 36px
+  &__text
+    font-family: 'HK Grotesk', Arial, sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 20px
+    color: $dark-blue
