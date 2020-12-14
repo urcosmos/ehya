@@ -1,0 +1,33 @@
+@media (max-width: 1199px)
+  .header
+    &-container
+      max-width: 960px
+
+@media (max-width: 991px)
+  .header
+    margin-top: 8px
+    margin-bottom: 30px
+    &-container
+      max-width: 650px
+      height: 64px
+
+  .navbar
+    &__list
+      &--visible
+        display: none
+    &__button
+      &--visible
+        display: none
+    &__mobile
+      &-menu
+        &-button
+          &--visible
+            display: flex
+
+@media (max-width: 767px)
+  .header
+    margin-top: 0
+    margin-bottom: 24px
+    &-container
+      max-width: 576px
+      width: calc(100% - 48px)

@@ -1,12 +1,37 @@
 .button
-  // border-radius:
+  font-family: 'Open Sans', Arial, sans-serif
+  border-radius: 8px
   outline: none
   cursor: pointer
   &--bordered
-    // color:
-    // border:
-    // background-color: #fff
-  &--solid
+    padding: 11px 22px
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    color: $blue
+    border: 2px solid $blue
+    background-color: transparent
+    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+  &--solid-hero
     // color:
     border: none
     // background-color: blue
+
+.mobile
+  &-menu
+    &-button
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 24px
+      height: 24px
+      padding: 3px 1px
+      background-color: transparent
+      border: none
+      outline: none
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2px
+        background-color: $dark-blue-mobile-button
+        border-radius: 1px
