@@ -668,6 +668,11 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 31px;
+}
+
+.goods__item:last-child {
+  margin-right: 0;
 }
 
 .goods__icon {
@@ -676,6 +681,7 @@ img {
 }
 
 .goods__text {
+  margin-left: 8px;
   font-family: 'HK Grotesk', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
