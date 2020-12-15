@@ -1,13 +1,13 @@
 .hero
-  // position: relative
+  position: relative
   margin-bottom: 120px
   &__bg
     position: relative
     max-width: 1280px
-    max-height: 700px
+    // max-height: 700px
     margin: 0 auto
     border-radius: 8px
-    background-color: $hero-bgc
+    // background-color: $hero-bgc
     overflow: hidden
     &-wrapper
       position: absolute
@@ -28,8 +28,17 @@
         background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
     &-pic
       transform: scale(1.07)
+  &__bgc
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    width: 100%
+    height: 100%
+    background-color: $hero-bgc
   &-container
     max-width: 1066px
+    padding: 62px 0 46px
     margin: 0 auto
   &-wrapper
     // position: absolute
@@ -38,7 +47,6 @@
     display: flex
     flex-direction: column
     align-items: flex-start
-
   &__tag
     margin-bottom: 22px
   &__title
