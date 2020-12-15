@@ -1,27 +1,4 @@
 
-  <section class="collection">
-    <div class="container">
-      <div class="collection-wrapper">
-        <div class="collection__images">
-          <!-- Замени дивы на img -->
-          <div class="c1"></div>
-          <div class="c2"></div>
-          <div class="c3"></div>
-        </div>
-        <!-- /.collection__images -->
-        <div class="collection__description">
-          <h2 class="title collection__title">Новая зимняя коллекция</h2>
-          <p class="text collection__text">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку
-            ниже. Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20% скидку.</p>
-          <a href="#" class="more collection__more">Посмотреть коллекцию</a>
-        </div>
-        <!-- /.collection__description -->
-      </div>
-      <!-- /.collection-wrapper -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.collections -->
 
   <section class="trends">
     <div class="container">

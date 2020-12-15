@@ -1,22 +1,54 @@
 .collection
+  margin-bottom: 145px
+  &-container
+    max-width: 1140px
+    margin: 0 auto
   &-wrapper
     display: flex
+    // justify-content: space-between
+    width: 100%
+    height: 100%
   &__images
     display: grid
-    grid-template-rows: 200px 200px
-    grid-template-columns: 200px 200px
-    grid-gap: 20px
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, minmax(230px, 0.5fr))
+    grid-gap: 30px
+    max-width: 670px
+    // max-height: 100%
+    margin-right: 57px
+    overflow: hidden
+  &__pic
+    object-fit: cover
+    width: 100%
+    height: 100%
+    border-radius: 8px
+    &--xl
+      grid-row: 1 / 3
+    &--m
 
+  &__description
+    // width: calc(50% - 100px)
+  &__title
+    max-width: 412px
+    margin-top: 5px
+    margin-bottom: 30px
+  &__text
+    max-width: 392px
+    margin-bottom: 40px
   &__more
-    // &::after
-      // content: url()
+    &::after
+      content: url('../img/icons/more-next.svg')
+      margin-left: 19px
 
-.c1
-  background-color: indigo
-  grid-row: 1 / 3
+.title
+  font-family: 'HK Grotesk', Arial, sans-serif
+  font-weight: 700
+  font-size: 48px
+  line-height: 60px
+  color: $dark-blue
 
-.c2
-  background-color: gainsboro
-
-.c3
-  background-color: crimson
+.more
+  font-weight: 700
+  font-size: 18px
+  line-height: 25px
+  color: $blue
