@@ -1,51 +1,6 @@
 
 
-  <section class="trends">
-    <div class="container">
-      <div class="trends__header-wrapper">
-        <h2 class="title trends__titile">Новая зимняя коллекция</h2>
-        <div class="filter trends__filter">
-          <ul class="filter__list">
-            <li class="filter__item">
-              <a href="#" class="filter__link filter__link--active">Новинки</a>
-            </li>
-            <li class="filter__item">
-              <a href="#" class="filter__link">Лучшее</a>
-            </li>
-            <li class="filter__item">
-              <a href="#" class="filter__link">Скоро</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.trends__filter -->
-      </div>
-      <!-- /.trends__header-wrapper -->
-      <div class="trends__cards-wrapper">
-        <div class="card-trend trends__card">
-          <div class="card-trend__image-wrapper">
-            <img src="" alt="" class="card-trend__pic">
-          </div>
-          <h3 class="card-trend__title">Minimalist Style</h3>
-          <div class="card-trend__wrapper">
-            <span class="card-trend__price">$25.7</span>
-            <img src="" alt="" class="card-trend__icon">
-          </div>
-        </div>
-        <!-- /.card-trend trends__card -->
-        <div class="card-trend trends__card">
-          <div class="card-trend__image-wrapper">
-            <!-- svg -->
-            <!-- с плюсом -->
-            <h3 class="card-trend__title">Смотреть больше клооецкций</h3>
-          </div>
-        </div>
-        <!-- /.card-trend trends__card -->
-      </div>
-      <!-- /.trends__cards-wrapper -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.trends -->
+
 
   <section class="reviews">
 

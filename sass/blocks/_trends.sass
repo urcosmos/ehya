@@ -1,9 +1,38 @@
 .trends
+  margin-bottom: 145px
+  &-container
+    max-width: 1140px
+    margin: 0 auto
   &__header
     &-wrapper
       display: flex
       justify-content: space-between
+      align-items: center
+      margin-bottom: 53px
+  &__cards
+    &-wrapper
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-template-rows: repeat(2, 1fr)
+      grid-row-gap: 50px
+      grid-column-gap: 30px
+      // margin-left: -30px
 
 .filter
   &__list
     display: flex
+    margin-top: 10px
+  &__item
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+  &__link
+    font-weight: 400
+    font-size: 18px
+    line-height: 25px
+    color: $grey
+    &--active
+      font-weight: 700
+      font-size: 18px
+      line-height: 25px
+      color: $dark-blue

@@ -2,7 +2,56 @@
   &-trend
     display: flex
     flex-direction: column
+    max-width: 260px
+    max-height: 441px
     &__image-wrapper
+      position: relative
       display: flex
       flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 260px
+      height: 350px
+      margin-bottom: 18px
+      border-radius: 8px
+      background-color: $blue
+      overflow: hidden
     &__pic
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__title
+      margin-left: 10px
+      margin-bottom: 5px
+      font-family: 'HK Grotesk', Arial, sans-serif
+      font-weight: 700
+      font-size: 24px
+      line-height: 32px
+      &--color
+        &--white
+          // max-width: 220px
+          margin-left: 0
+          color: $white
+          text-align: center
+    &__wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__price
+      margin-left: 10px
+      font-weight: 400
+      font-size: 20px
+      line-height: 36px
+      color: $grey
+    &__icon
+      width: 23px
+      height: 32px
+      margin-right: 11px
+      margin-top: 1px
+    &__plus
+      &-icon
+        width: 28px
+        height: 37px
+        margin-bottom: 22px
+        margin-top: 18px
