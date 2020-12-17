@@ -17,6 +17,27 @@ $(document).ready(function () {
     // },
   });
 
+
+  var articlesSlider = new Swiper('.articles__slider', {
+    // autoplay: {
+    //   delay: 7000
+    // },
+    // loop: true,
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+    // keyboard: {
+    //   enabled: true
+    // },
+    navigation: {
+      nextEl: '.articles__slider-button--next',
+      prevEl: '.articles__slider-button--prev',
+    },
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 18,
+  });
+
   // var menuButton = $('.menu-button');
 
   // menuButton.on('click', function () {

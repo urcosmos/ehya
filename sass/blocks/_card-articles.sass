@@ -1,0 +1,35 @@
+.card
+  &-articles
+    position: relative
+    width: 322px
+    height: 475px
+    &__image
+      &-wrapper
+        position: absolute
+        top: 0
+        left: 0
+        width: 312px
+        height: 317px
+        border-radius: 8px 8px 0 0
+        overflow: hidden
+    &__pic
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__text
+      &-wrapper
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 1
+        width: 312px
+        height: 178px
+        padding: 20px 32px 20px 20px
+        background-color: $articles-cards-bg-color
+    &__title
+      max-width: 255px
+      margin-bottom: 12px
+      font-family: 'HK Grotesk', Arial, sans-serif
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px

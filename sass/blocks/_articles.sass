@@ -1,0 +1,51 @@
+.articles
+  margin-bottom: 140px
+  &-container
+    max-width: 1150px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    height: 475px
+  &__tag
+    display: inline-block
+    margin-bottom: 28px
+  &__title
+    max-width: 337px
+    margin-bottom: 24px
+  &__text
+    max-width: 392px
+    margin-bottom: 42px
+  &__slider
+    flex-basis: 662px
+    &-button
+      width: 56px
+      height: 56px
+      fill: $dark-blue
+      border: 2px solid $dark-blue
+      border-radius: 50%
+      background-color: transparent
+      outline: none
+      cursor: pointer
+      &--prev
+        margin-right: 22px
+  &__slide
+    // margin-right: 18px
+    // &:last-child
+    //   margin-right: 0
+  &__more
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+
+.slider-button__prev,
+.slider-button__next
+  width: 14px
+  height: 14px
+
+.swiper-button-disabled
+  border: 2px solid $swiper-button-disabled-color
+  fill: $swiper-button-disabled-color

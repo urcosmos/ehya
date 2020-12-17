@@ -3,11 +3,3 @@
 
 
 
-
-  <section class="articles">
-    <div class="article-wrapper">
-
-    </div>
-    <!-- /.article-wrapper -->
-  </section>
-  <!-- /.articles -->

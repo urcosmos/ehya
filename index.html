@@ -103,7 +103,7 @@
   </section>
   <!-- /.hero -->
 
-  <section class="collection">
+  <section id="collections" class="collection">
     <div class="collection-container">
       <div class="collection-wrapper">
         <div class="collection__images">
@@ -129,7 +129,7 @@
   </section>
   <!-- /.collections -->
 
-  <section class="trends">
+  <section id="trends" class="trends">
     <div class="trends-container">
       <div class="trends__header-wrapper">
         <h2 class="title trends__title">Тренды</h2>
@@ -247,7 +247,7 @@
   </section>
   <!-- /.trends -->
 
-  <section class="reviews">
+  <section id="reviews" class="reviews">
     <div class="reviews-container">
       <div class="reviews__quote">
         <img src="img/icons/quote-left.svg" alt="Icon: quote">
@@ -288,6 +288,97 @@
     <!-- /.reviews-container -->
   </section>
   <!-- /.reviews -->
+
+  <section class="horizont">
+    <div class="horizont__line"></div>
+  </section>
+
+  <section class="articles">
+    <div class="articles-container">
+      <div class="article-wrapper">
+        <span class="tag articles__tag">Истории</span>
+        <h2 class="title articles__title" lang="en">Это История Fashfun</h2>
+        <p class="text articles__text">Ознакомьтесь с нашим рассказом о&nbsp;моде. Написано нашим дизайнером и
+          специалистом.
+        </p>
+        <!-- If we need navigation buttons -->
+        <button class="articles__slider-button articles__slider-button--prev">
+          <svg class="slider-button__prev">
+            <use xlink:href="img/icons/slider-button-prev.svg#slider-button-prev"></use>
+          </svg>
+        </button>
+        <button class="articles__slider-button articles__slider-button--next">
+          <svg class="slider-button__next">
+            <use xlink:href="img/icons/slider-button-next.svg#slider-button-next"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- /.article-wrapper -->
+      <div class="swiper-container articles__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide articles__slide">
+            <div class="card-articles articles__card">
+              <div class="card-articles__image-wrapper">
+                <img src="img/articles_0001.png" alt="Photo of a girl reading a book" class="card-articles__pic">
+              </div>
+              <div class="card-articles__text-wrapper">
+                <h3 class="card-articles__title">Mix & Match Style 01: повседневный и формальный стиль</h3>
+                <a href="#" class="more articles__more">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.card-articles articles__card -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide articles__slide">
+            <div class="card-articles articles__card">
+              <div class="card-articles__image-wrapper">
+                <img src="img/articles_0002.png" alt="Photo of a girl reading a book" class="card-articles__pic">
+              </div>
+              <div class="card-articles__text-wrapper">
+                <h3 class="card-articles__title">Лайфхак: Купите одежду Thrifft на воскресном рынке
+                </h3>
+                <a href="#" class="more articles__more">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.card-articles articles__card -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide articles__slide">
+            <div class="card-articles articles__card">
+              <div class="card-articles__image-wrapper">
+                <img src="img/articles_0002.png" alt="Photo of a girl reading a book" class="card-articles__pic">
+              </div>
+              <div class="card-articles__text-wrapper">
+                <h3 class="card-articles__title">Лайфхак: Купите одежду Thrifft на воскресном рынке
+                </h3>
+                <a href="#" class="more articles__more">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.card-articles articles__card -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide articles__slide">
+            <div class="card-articles articles__card">
+              <div class="card-articles__image-wrapper">
+                <img src="img/articles_0002.png" alt="Photo of a girl reading a book" class="card-articles__pic">
+              </div>
+              <div class="card-articles__text-wrapper">
+                <h3 class="card-articles__title">Лайфхак: Купите одежду Thrifft на воскресном рынке
+                </h3>
+                <a href="#" class="more articles__more">Читать далее</a>
+              </div>
+            </div>
+            <!-- /.card-articles articles__card -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+      </div>
+    </div>
+    <!-- /.articles-container -->
+  </section>
+  <!-- /.articles -->
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
