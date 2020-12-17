@@ -1,17 +1,20 @@
 $(document).ready(function () {
 
-  var reviewsSlider = new Swiper('.reviews-slider', {
+  var reviewsSlider = new Swiper('.reviews__slider', {
     autoplay: {
       delay: 7000
     },
     loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
     // keyboard: {
     //   enabled: true
     // },
-    navigation: {
-      nextEl: '.reviews-slider__button--next',
-      prevEl: '.reviews-slider__button--prev',
-    },
+    // navigation: {
+    //   nextEl: '.reviews-slider__button--next',
+    //   prevEl: '.reviews-slider__button--prev',
+    // },
   });
 
   // var menuButton = $('.menu-button');

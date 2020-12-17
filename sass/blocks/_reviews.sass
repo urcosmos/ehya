@@ -1,0 +1,53 @@
+.reviews
+  margin-bottom: 80px
+  &-container
+    max-width: 830px
+    margin: 0 auto
+  &__slider
+    max-height: 275px
+  &__slide
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__quote
+    display: flex
+    align-items: center
+    width: 80px
+    height: 92px
+    margin: 0 auto 22px
+  &__text
+    max-width: 800px
+    max-height: 170px
+    margin-bottom: 28px
+    font-family: 'HK Grotesk', Arial, sans-serif
+    font-weight: 400
+    font-size: 20px
+    line-height: 42px
+    text-align: center
+    overflow-y: auto
+  &__author
+    margin-bottom: 48px
+    font-family: 'HK Grotesk', Arial, sans-serif
+    font-weight: 700
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+
+.swiper
+  &-pagination
+    &-bullet
+      width: 5px
+      height: 5px
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+  bottom: -3px
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 8px
+
+.swiper-pagination-bullet
+  background: $light-grey
+  opacity: 1
+
+.swiper-pagination-bullet-active
+  background-color: $dark-blue
