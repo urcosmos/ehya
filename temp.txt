@@ -2,10 +2,7 @@
 
 
 
-  <section class="reviews">
 
-  </section>
-  <!-- /.reviews -->
 
   <section class="articles">
     <div class="article-wrapper">
