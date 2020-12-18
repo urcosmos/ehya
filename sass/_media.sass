@@ -54,6 +54,77 @@
     &-grid
       grid-template-columns: 270px 180px 180px 180px 150px
 
+@media screen and (min-width: 992px)
+  .navbar
+    &__link
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: -5px
+        left: 0
+        width: 0
+        height: 1px
+        background-color: $dark-blue
+        transition: width 0.3s ease
+      &:hover::after
+        width: 100%
+
+  .button
+    &--solid
+      &:hover
+        background-color: $blue
+    &--bordered
+      &:hover
+        background-color: $blue
+        color: $white
+
+  .filter__link
+    &:hover
+      color: $blue
+
+  .card-trend__image-wrapper
+    &:hover
+      background-color: $dark-blue
+
+  .slider-button
+    &:hover
+      fill: $blue
+      border-color: $blue
+
+  .swiper-button-disabled
+    &:hover
+      border: 2px solid $swiper-button-disabled-color
+      fill: $swiper-button-disabled-color
+
+  .newsletter__form-submit-input
+    &:hover
+      background-color: $blue
+
+  .socials__link
+    &:hover
+      background-color: rgba($blue , 0.2)
+
+  .nav__link
+    &:hover
+      color: $blue
+
+  .to-top__button
+    &:hover
+      background-color: $grey
+
+  .modal__button
+    &:hover
+      background-color: $grey
+
+  .more
+    &:hover
+      color: $dark-blue
+
+  .collection__more
+    &:hover::after
+      content: url('../img/icons/more-next-hover.svg')
+
 @media (max-width: 991px)
   .header
     // margin-top: 8px

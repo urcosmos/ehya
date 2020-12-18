@@ -86,6 +86,13 @@ $(document).ready(function () {
     }, 1000);
   });
 
+  $('.anchor-main').on('click', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0 + 'px'
+    }, 1000);
+  });
+
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
 

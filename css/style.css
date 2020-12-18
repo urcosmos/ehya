@@ -972,6 +972,7 @@ img {
 }
 
 .collection__more::after {
+  fill: #1565D8;
   content: url("../img/icons/more-next.svg");
   margin-left: 19px;
 }
@@ -1520,6 +1521,42 @@ img {
   height: 100%;
 }
 
+.to-top {
+  position: fixed;
+  z-index: 50;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.to-top__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #183B56;
+  overflow: hidden;
+}
+
+.to-top__icon {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
 .modal {
   display: none;
 }
@@ -1697,6 +1734,69 @@ img {
   .footer-grid {
     -ms-grid-columns: 270px 180px 180px 180px 150px;
         grid-template-columns: 270px 180px 180px 180px 150px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar__link {
+    position: relative;
+  }
+  .navbar__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #183B56;
+    -webkit-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+  }
+  .navbar__link:hover::after {
+    width: 100%;
+  }
+  .button--solid:hover {
+    background-color: #1565D8;
+  }
+  .button--bordered:hover {
+    background-color: #1565D8;
+    color: #FFFFFF;
+  }
+  .filter__link:hover {
+    color: #1565D8;
+  }
+  .card-trend__image-wrapper:hover {
+    background-color: #183B56;
+  }
+  .slider-button:hover {
+    fill: #1565D8;
+    border-color: #1565D8;
+  }
+  .swiper-button-disabled:hover {
+    border: 2px solid #959EAD;
+    fill: #959EAD;
+  }
+  .newsletter__form-submit-input:hover {
+    background-color: #1565D8;
+  }
+  .socials__link:hover {
+    background-color: rgba(21, 101, 216, 0.2);
+  }
+  .nav__link:hover {
+    color: #1565D8;
+  }
+  .to-top__button:hover {
+    background-color: #5A7184;
+  }
+  .modal__button:hover {
+    background-color: #5A7184;
+  }
+  .more:hover {
+    color: #183B56;
+  }
+  .collection__more:hover::after {
+    content: url("../img/icons/more-next-hover.svg");
   }
 }
 
