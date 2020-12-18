@@ -43,6 +43,11 @@ $(document).ready(function () {
   var menuButton = $('.mobile-menu-button');
   var menuCloseButton = $('.mobile-menu__close');
   var mobileMenuLink = $('.mobile-menu__link');
+  var modalButton = $('[data-toggle=modal]');
+  var closeModalButton = $('.modal__close');
+  var modal = $('.modal');
+  var mobileMenu = $('.mobile-menu');
+  var body = $('body');
 
   menuButton.on('click', function (event) {
     openCloseMobileMenu(event);
@@ -58,16 +63,15 @@ $(document).ready(function () {
 
   function openCloseMobileMenu(event) {
     event.preventDefault();
-    $('.mobile-menu').toggleClass('mobile-menu--visible');
-    $('body').toggleClass('body-overflow');
+    mobileMenu.toggleClass('mobile-menu--visible');
+    body.toggleClass('body-overflow');
   }
 
   $(document).on('keyup', function (event) {
     if (event.keyCode == 27) {
-      var mobileMenu = $('.mobile-menu');
-      var body = $('body');
       mobileMenu.addClass('mobile-menu--visible');
       body.removeClass('body-overflow');
+      modal.removeClass('modal--visible');
     }
   });
 
@@ -81,52 +85,20 @@ $(document).ready(function () {
     }, 1000);
   });
 
-  // var modalButton = $('[data-toggle=modal]');
-  // var closeModalButton = $('.modal__close');
-  // modalButton.on('click', openModal);
-  // closeModalButton.on('click', closeModal);
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
 
-  // function openModal() {
-  //   var modal = $('.modal');
-  //   var modalOverlay = $('.modal__overlay');
-  //   var modalDialog = $('.modal__dialog');
-  //   var body = $('body');
-  //   modal.addClass('modal--visible');
-  //   body.addClass('body-overflow');
-  //   setTimeout(function () {
-  //     modalOverlay.addClass('modal__overlay--visible');
-  //     modalDialog.addClass('modal__dialog--visible');
-  //   }, 10);
-  // }
+  function openModal() {
+    modal.addClass('modal--visible');
+    body.addClass('body-overflow');
+  }
 
-  // function closeModal(event) {
-  //   event.preventDefault();
-  //   var modal = $('.modal');
-  //   var modalOverlay = $('.modal__overlay');
-  //   var modalDialog = $('.modal__dialog');
-  //   var body = $('body');
-  //   modalOverlay.removeClass('modal__overlay--visible');
-  //   modalDialog.removeClass('modal__dialog--visible');
-  //   body.removeClass('body-overflow');
-  //   setTimeout(function () {
-  //     modal.removeClass('modal--visible');
-  //   }, 500);
-  // }
-
-  // $(document).on('keyup', function (evt) {
-  //   if (evt.keyCode == 27) {
-  //     var modal = $('.modal');
-  //     var modalOverlay = $('.modal__overlay');
-  //     var modalDialog = $('.modal__dialog');
-  //     var body = $('body');
-  //     body.removeClass('body-overflow');
-  //     modalOverlay.removeClass('modal__overlay--visible');
-  //     modalDialog.removeClass('modal__dialog--visible');
-  //     setTimeout(function () {
-  //       modal.removeClass('modal--visible');
-  //     }, 500);
-  //   }
-  // });
+  function closeModal(event) {
+    event.preventDefault();
+    body.removeClass('body-overflow');
+    modal.removeClass('modal--visible');
+    mobileMenu.addClass('mobile-menu--visible');
+  }
 
   // $('.form').each(function () {
   //   $(this).validate({

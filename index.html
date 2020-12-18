@@ -53,7 +53,8 @@
             <a href="#footer" class="navbar__link anchor">Контакты</a>
           </li>
         </ul>
-        <button class="button button--bordered navbar__button navbar__button--visible">Войти</button>
+        <button data-toggle="modal"
+          class="button button--bordered navbar__button navbar__button--visible">Войти</button>
         <button class="mobile-menu-button navbar__mobile-menu-button navbar__mobile-menu-button--visible">
           <span class="mobile-menu-button__line"></span>
           <span class="mobile-menu-button__line"></span>
@@ -83,7 +84,7 @@
           <a href="#footer" class="mobile-menu__link anchor">Контакты</a>
         </li>
       </ul>
-      <button class="button mobile-menu__button--bordered mobile-menu__button">Войти</button>
+      <button data-toggle="modal" class="button mobile-menu__button--bordered mobile-menu__button">Войти</button>
     </div>
     <!-- /.mobile-menu -->
   </header>
@@ -556,20 +557,20 @@
   </footer>
   <!-- /.footer -->
 
-  <div class="modal modal--visible">
+  <div class="modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
       <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="Icon: close modal window" class="modal__close-pic">
+        <img src="img/icons/close-modal.svg" alt="Icon: close modal window" class="modal__close-pic">
       </a>
-      <h3 class="modal__title">Войти</h3>
+      <h3 class="modal__title">Оставить заявку</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*" required minlength="2">
-        <input type="tel" name="phone" class="input modal__input input--phone-masked" placeholder="Phone Number*"
+        <input type="text" name="name" class="input modal__input" placeholder="Ваше имя" required minlength="2">
+        <input type="tel" name="phone" class="input modal__input input--phone-masked" placeholder="Ваш номер телефона"
           required minlength="18">
-        <input type="email" name="email" class="input modal__input" placeholder="Email*" required>
-        <input type="submit" name="send-booking" value="Send" class="button modal__button">
+        <input type="email" name="email" class="input modal__input" placeholder="Ваш Email" required>
+        <input type="submit" name="send-booking" value="Отправить" class="button modal__button">
       </form>
     </div>
     <!-- /.modal__dialog -->
