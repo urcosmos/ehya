@@ -17,8 +17,7 @@ $(document).ready(function () {
     // },
   });
 
-
-  var articlesSlider = new Swiper('.articles__slider', {
+  var settings = {
     // autoplay: {
     //   delay: 7000
     // },
@@ -33,10 +32,31 @@ $(document).ready(function () {
       nextEl: '.articles__slider-button--next',
       prevEl: '.articles__slider-button--prev',
     },
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 18,
-  });
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: 'row',
+    spaceBetween: 24,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        slidesPerColumn: 1,
+        spaceBetween: 18
+      }
+    }
+  };
+
+  var articlesSlider = new Swiper('.articles__slider', settings);
+
+
+
+  // function setOptions() {
+  //   articlesSlider.slidesPerGroup = articlesSlidesPerGroup;
+  //   articlesSlider.slidesPerColumn = articlesSlidesPerColumn;
+  //   articlesSlider.spaceBetween = articlesSpaceBetween;
+  // }
+
 
   // var menuButton = $('.menu-button');
 
