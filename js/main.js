@@ -79,9 +79,10 @@ $(document).ready(function () {
     event.preventDefault();
     var section = $(this).attr('href').substr($(this).attr('href').indexOf('#'));
     var $section = $(section);
+    var offset = $section.offset().top;
 
     $('html, body').animate({
-      scrollTop: $section.offset().top + 'px'
+      scrollTop: offset - 100 + 'px'
     }, 1000);
   });
 
