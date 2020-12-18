@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ehya - магазин модной одежды</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="header__logo">
+        <img src="img/icons/logo.svg" alt="Ehya logo" class="header__logo-pic">
+      </a>
+      <nav class="navbar header__navbar">
+        <ul class="navbar__list navbar__list--visible">
+          <li class="navbar__item">
+            <a href="#hero" class="navbar__link anchor">Главная</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#collections" class="navbar__link anchor">Новинки</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#trends" class="navbar__link anchor">Тренды</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#reviews" class="navbar__link anchor">Отзывы</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#footer" class="navbar__link anchor">Контакты</a>
+          </li>
+        </ul>
+        <button data-toggle="modal"
+          class="button button--bordered navbar__button navbar__button--visible">Войти</button>
+        <button class="mobile-menu-button navbar__mobile-menu-button navbar__mobile-menu-button--visible">
+          <span class="mobile-menu-button__line"></span>
+          <span class="mobile-menu-button__line"></span>
+          <span class="mobile-menu-button__line"></span>
+        </button>
+      </nav>
+    </div>
+    <!-- /.header-container -->
+    <div class="mobile-menu mobile-menu--visible">
+      <a href="#" class="mobile-menu__close">
+        <img src="img/icons/close.svg" alt="Icon: close" class="mobile-menu__close-pic">
+      </a>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="#hero" class="mobile-menu__link anchor">Главная</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#collections" class="mobile-menu__link anchor">Новинки</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#trends" class="mobile-menu__link anchor">Тренды</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#reviews" class="mobile-menu__link anchor">Отзывы</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#footer" class="mobile-menu__link anchor">Контакты</a>
+        </li>
+      </ul>
+      <button data-toggle="modal" class="button mobile-menu__button--bordered mobile-menu__button">Войти</button>
+    </div>
+    <!-- /.mobile-menu -->
+  </header>
+  <!-- /.header -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <div class="hero-container">
+        <div class="hero-wrapper">
+          <span class="tag hero__tag"># Благодарность</span>
+          <h1 class="hero__title" lang="en">Спасибо!</h1>
+          <p class="hero__text text">Мы скоро с Вами свяжемся.</p>
+          <a href="index.html" class="button hero__button button--solid">Назад</a>
+        </div>
+        <!-- /.hero-wrapper -->
+      </div>
+    </div>
+    <!-- /.hero__container -->
+  </section>
+  <!-- /.hero -->
+
+  <footer id="footer" class="footer">
+    <div class="footer-container">
+      <div class="footer-grid footer-grid__ml">
+        <div class="footer__logo-wrapper">
+          <a href="#" class="footer__logo">
+            <img src="img/icons/logo.svg" alt="Ehya logo" class="footer__logo-pic">
+          </a>
+          <p class="text footer__text">Интернет-магазин брендовой одежды с оплатой онлайн</p>
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a href="https://www.google.ru/" class="socials__link" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/google.svg" alt="Icon: google" class="socials__icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://twitter.com/?lang=ru" class="socials__link" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/twitter.svg" alt="Icon: twitter" class="socials__icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://www.instagram.com/?hl=ru" class="socials__link" target="_blank"
+                rel="noopener noreferrer">
+                <img src="img/icons/instagram.svg" alt="Icon: instagram" class="socials__icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://ru.linkedin.com/" class="socials__link" target="_blank" rel="noopener noreferrer">
+                <img src="img/icons/linkedin.svg" alt="Icon: linkedin" class="socials__icon">
+              </a>
+            </li>
+          </ul>
+          <!-- /.footer__socials .socials -->
+        </div>
+        <!-- /.footer__logo-wrapper -->
+        <div class="footer__nav-list nav">
+          <h3 class="nav__title">Навигация</h3>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Новая коллекция</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Трендовая одежда</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">История Fashun</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Отзывы клиентов</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Вся одежда</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-list nav">
+          <h3 class="nav__title">Сервисы</h3>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Рассрочка на 6 мес</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Кредит на 12 мес</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Доставка по РФ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Возврат покупок</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Акции и кэшбек</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-list nav">
+          <h3 class="nav__title">Компания</h3>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Об Ehya</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Правила сайта</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Обработка данных</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Вакансии</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-list nav">
+          <h3 class="nav__title">Контакты</h3>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="https://ru-ru.facebook.com/" class="nav__link">Группа Фейсбук</a>
+            </li>
+            <li class="nav__item">
+              <a href="https://www.youtube.com/?gl=RU&hl=ru" class="nav__link">Канал Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.footer-grid -->
+    </div>
+    <!-- /.footer-container -->
+  </footer>
+  <!-- /.footer -->
+
+  <div class="to-top">
+    <a href="#" class="to-top__button anchor-main">
+      <img src="img/icons/arrow-next.svg" alt="Icon: go to top" class="to-top__icon">
+    </a>
+  </div>
+  <!-- /.to-top -->
+
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/icons/close-modal.svg" alt="Icon: close modal window" class="modal__close-pic">
+      </a>
+      <h3 class="modal__title">Оставить заявку</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" name="name" class="input modal__input" placeholder="Ваше имя" required minlength="2">
+        <input type="tel" name="phone" class="input modal__input input--phone-masked" placeholder="Ваш номер телефона"
+          required minlength="18">
+        <input type="email" name="email" class="input modal__input" placeholder="Ваш Email" required>
+        <input type="submit" name="send-modal" value="Отправить" class="button modal__button">
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+
+</html>
