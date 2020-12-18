@@ -1,0 +1,64 @@
+.footer
+  padding-top: 128px
+  padding-bottom: 131px
+  &-container
+    max-width: 1140px
+    margin: 0 auto
+  &-grid
+    display: grid
+    grid-template-columns: 292px 195px 195px 195px 195px
+    grid-template-rows: 1fr
+  &__logo
+    display: inline-block
+    margin-bottom: 26px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &-pic
+      width: 90px
+      height: 28px
+  &__text
+    max-width: 265px
+    margin-bottom: 29px
+    font-weight: 400
+    font-size: 16px
+    line-height: 28px
+    color: $grey
+
+.nav
+  &__title
+    margin-bottom: 31px
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    color: $dark-blue
+  &__item
+    margin-bottom: 24px
+    &:last-child
+      margin-bottom: 0
+  &__link
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    color: $dark-blue
+
+.socials
+  display: flex
+  &__item
+    width: 40px
+    height: 40px
+    margin-right: 8px
+    background-color: rgba($grey, 0.1)
+    border-radius: 50%
+    overflow: hidden
+    &:last-child
+      margin-right: 0
+  &__link
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+  &__icon
+    // width: 14px
