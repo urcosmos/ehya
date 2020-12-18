@@ -46,6 +46,7 @@ $(document).ready(function () {
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $('.modal__close');
   var modal = $('.modal');
+  var modalOverlay = $('.modal__overlay');
   var mobileMenu = $('.mobile-menu');
   var body = $('body');
   var filterLink = $('.filter__link');
@@ -140,6 +141,8 @@ $(document).ready(function () {
 
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
+  modalOverlay.on('click', closeModal);
+
 
   function openModal() {
     modal.addClass('modal--visible');
@@ -153,35 +156,31 @@ $(document).ready(function () {
     mobileMenu.addClass('mobile-menu--visible');
   }
 
-  // $('.form').each(function () {
-  //   $(this).validate({
-  //     errorClass: "invalid",
-  //     messages: {
-  //       name: {
-  //         required: "Please specify your name",
-  //         minlength: "Name should be more than 2 characters"
-  //       },
-  //       email: {
-  //         required: "We need your email address to contact you",
-  //         email: "Your email address must be in the format of name@domain.com"
-  //       },
-  //       phone: "Please specify your phone number"
-  //     }
-  //   });
-  // });
+  $('.modal__form').validate({
+    errorClass: "invalid-modal",
+    messages: {
+      name: {
+        required: "Укажите свое имя",
+        minlength: "Имя должно содержать больше 2 букв"
+      },
+      email: {
+        required: "Необходимо ввести Email",
+        email: "Пожалуйста, используйте формат записи name@domain.com"
+      },
+      phone: "Укажите телефон"
+    }
+  });
 
-  // $('.newsletter-subscribe').validate({
-  //   errorClass: "invalid-subscribe",
-  //   messages: {
-  //     email: {
-  //       required: "We need your email address to contact you",
-  //       email: "Your email address must be in the format of name@domain.com"
-  //     }
-  //   }
-  // });
+  $('.newsletter__form').validate({
+    errorClass: "invalid-newsletter",
+    messages: {
+      email: {
+        required: "Необходимо ввести Email",
+        email: "Пожалуйста, используйте формат записи name@domain.com"
+      }
+    }
+  });
 
-  // $('.input--phone-masked').each(function () {
-  //   $(this).mask('+7 (000) 000-00-00');
-  // });
+  $('.input--phone-masked').mask('+7 (000) 000-00-00');
 
 });

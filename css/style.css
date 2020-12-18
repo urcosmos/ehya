@@ -1455,6 +1455,19 @@ img {
           align-items: center;
 }
 
+label.invalid-newsletter {
+  position: absolute;
+  left: 0;
+  top: 65px;
+  width: 100%;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+input.invalid-newsletter {
+  border: 4px solid red;
+}
+
 .footer {
   padding-top: 128px;
   padding-bottom: 131px;
@@ -1672,6 +1685,7 @@ img {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 10px;
   height: 56px;
   padding: 19px 19px 17px 19px;
   font-weight: 600;
@@ -1722,6 +1736,16 @@ img {
   color: #FFFFFF;
   background-color: #183B56;
   border: none;
+}
+
+label.invalid-modal {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+input.invalid-modal {
+  border: 4px solid red;
 }
 
 @media (max-width: 1360px) {
@@ -2516,6 +2540,9 @@ img {
   }
   .br {
     display: none;
+  }
+  label.invalid-newsletter {
+    top: 115px;
   }
   .footer {
     padding-top: 48px;
