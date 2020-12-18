@@ -8,26 +8,17 @@ $(document).ready(function () {
     pagination: {
       el: '.swiper-pagination',
     },
-    // keyboard: {
-    //   enabled: true
-    // },
-    // navigation: {
-    //   nextEl: '.reviews-slider__button--next',
-    //   prevEl: '.reviews-slider__button--prev',
-    // },
+  });
+
+  $('.reviews__slider').mouseover(function () {
+    reviewsSlider.autoplay.stop();
+  });
+
+  $('.reviews__slider').mouseout(function () {
+    reviewsSlider.autoplay.start();
   });
 
   var settings = {
-    // autoplay: {
-    //   delay: 7000
-    // },
-    // loop: true,
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-    // keyboard: {
-    //   enabled: true
-    // },
     navigation: {
       nextEl: '.articles__slider-button--next',
       prevEl: '.articles__slider-button--prev',
@@ -49,21 +40,46 @@ $(document).ready(function () {
 
   var articlesSlider = new Swiper('.articles__slider', settings);
 
+  var menuButton = $('.mobile-menu-button');
+  var menuCloseButton = $('.mobile-menu__close');
+  var mobileMenuLink = $('.mobile-menu__link');
 
+  menuButton.on('click', function (event) {
+    openCloseMobileMenu(event);
+  });
 
-  // function setOptions() {
-  //   articlesSlider.slidesPerGroup = articlesSlidesPerGroup;
-  //   articlesSlider.slidesPerColumn = articlesSlidesPerColumn;
-  //   articlesSlider.spaceBetween = articlesSpaceBetween;
-  // }
+  menuCloseButton.on('click', function (event) {
+    openCloseMobileMenu(event);
+  });
 
+  mobileMenuLink.on('click', function (event) {
+    openCloseMobileMenu(event);
+  });
 
-  // var menuButton = $('.menu-button');
+  function openCloseMobileMenu(event) {
+    event.preventDefault();
+    $('.mobile-menu').toggleClass('mobile-menu--visible');
+    $('body').toggleClass('body-overflow');
+  }
 
-  // menuButton.on('click', function () {
-  //   $('.navbar-bottom').toggleClass('navbar-bottom--visible');
-  //   $('body').toggleClass('body-overflow');
-  // });
+  $(document).on('keyup', function (event) {
+    if (event.keyCode == 27) {
+      var mobileMenu = $('.mobile-menu');
+      var body = $('body');
+      mobileMenu.addClass('mobile-menu--visible');
+      body.removeClass('body-overflow');
+    }
+  });
+
+  $('.anchor').on('click', function (event) {
+    event.preventDefault();
+    var section = $(this).attr('href').substr($(this).attr('href').indexOf('#'));
+    var $section = $(section);
+
+    $('html, body').animate({
+      scrollTop: $section.offset().top + 'px'
+    }, 1000);
+  });
 
   // var modalButton = $('[data-toggle=modal]');
   // var closeModalButton = $('.modal__close');
