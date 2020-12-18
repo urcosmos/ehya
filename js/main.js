@@ -48,6 +48,16 @@ $(document).ready(function () {
   var modal = $('.modal');
   var mobileMenu = $('.mobile-menu');
   var body = $('body');
+  var filterLink = $('.filter__link');
+  var trendCard01 = $('.card-trend--01');
+  var trendCard02 = $('.card-trend--02');
+  var trendCard03 = $('.card-trend--03');
+  var trendCard04 = $('.card-trend--04');
+  var trendCard05 = $('.card-trend--05');
+  var trendCard06 = $('.card-trend--06');
+  var trendCard07 = $('.card-trend--07');
+  var trendCardMore = $('.card-trend--more');
+
 
   menuButton.on('click', function (event) {
     openCloseMobileMenu(event);
@@ -84,6 +94,41 @@ $(document).ready(function () {
     $('html, body').animate({
       scrollTop: offset - 100 + 'px'
     }, 1000);
+  });
+
+  filterLink.on('click', function (event) {
+    event.preventDefault();
+    var activeLink = $(this).attr('data-cat');
+    filterLink.removeClass('filter__link--active');
+    $(this).addClass('filter__link--active');
+    if (activeLink == 'new') {
+      trendCard01.css('order', 1);
+      trendCard02.css('order', 2);
+      trendCard03.css('order', 3);
+      trendCard04.css('order', 4);
+      trendCard05.css('order', 5);
+      trendCard06.css('order', 6);
+      trendCard07.css('order', 7);
+      trendCardMore.css('order', 8);
+    } else if (activeLink == 'best') {
+      trendCard01.css('order', 4);
+      trendCard02.css('order', 1);
+      trendCard03.css('order', 5);
+      trendCard04.css('order', 7);
+      trendCard05.css('order', 3);
+      trendCard06.css('order', 2);
+      trendCard07.css('order', 6);
+      trendCardMore.css('order', 8);
+    } else {
+      trendCard01.css('order', 3);
+      trendCard02.css('order', 2);
+      trendCard03.css('order', 4);
+      trendCard04.css('order', 6);
+      trendCard05.css('order', 7);
+      trendCard06.css('order', 5);
+      trendCard07.css('order', 1);
+      trendCardMore.css('order', 8);
+    }
   });
 
   $('.anchor-main').on('click', function (event) {
