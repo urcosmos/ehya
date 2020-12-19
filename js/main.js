@@ -27,7 +27,7 @@ $(document).ready(function () {
     slidesPerGroup: 1,
     slidesPerColumn: 2,
     slidesPerColumnFill: 'row',
-    spaceBetween: 24,
+    // spaceBetween: 24,
     breakpoints: {
       768: {
         slidesPerView: 2,

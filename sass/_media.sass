@@ -359,8 +359,9 @@
 
   .trends
     &-container
-      max-width: 576px
-      width: calc(100% - 30px)
+      max-width: 510px
+      // max-width: 576px
+      // width: calc(100% - 30px)
     &__header
       &-wrapper
         margin-bottom: 36px
@@ -368,6 +369,7 @@
       margin-bottom: 27px
     &__cards
       &-wrapper
+        grid-template-columns: repeat(2, 250px)
         grid-row-gap: 20px
         grid-column-gap: 10px
 
@@ -394,6 +396,11 @@
       // &:nth-child(1+2n)
       //   margin-bottom: 0
 
+  .swiper
+    &-wrapper
+      margin-bottom: -24px
+    &-slide
+      margin-bottom: 24px
   .card
     &-articles
       width: 100%
@@ -523,6 +530,12 @@
 
   .trends
     margin-bottom: 48px
+    &-container
+      max-width: 410px
+    &__cards-wrapper
+      grid-template-columns: repeat(2, 200px)
+    &__card
+      // max-height: 230px
 
   .filter
     &__item
@@ -544,22 +557,31 @@
         height: 260px
       &__title
         margin-left: 0
-        margin-bottom: -2px
+        margin-bottom: 3px
         font-size: 16px
         line-height: 20px
         &--color
           &--white
             font-size: 16px
+            margin-bottom: -2px
       &__wrapper
         justify-content: flex-start
+        margin-bottom: 4px
       &__price
         margin-left: 0
         font-size: 14px
         line-height: 24px
       &__icon
-        width: 14px
+        width: 16px
+        height: 12px
+        // margin-right: 0
+        // margin-left: 9px
         margin-right: 0
-        margin-left: 9px
+        margin-top: 0
+        &-wrapper
+          margin-left: 8px
+          height: 16px
+          width: 15px
       &__plus
         &-icon
           width: 25px
@@ -714,6 +736,13 @@
     &-container
     &__text
       // max-width: 280px
+
+  .trends
+    &-container
+      max-width: 290px
+    &__cards
+      &-wrapper
+        grid-template-columns: repeat(2, 140px)
 
   .card
     &-trend
