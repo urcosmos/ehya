@@ -1,4 +1,4 @@
 # ehya
 Выпускной проект на курсе Веб Старт от Glo Academy
 
-evoe.dev/projects/ehya
+[Посмотреть проект](https://evoe.dev/projects/ehya)
